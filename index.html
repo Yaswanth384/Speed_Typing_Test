@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Typing Test</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-div p-4">
+        <h1 class="main-head">Speed Typing Test</h1>
+        <p class="mt-3">On your fingers, let's go!</p>
+        <div class="d-flex flex-row align-items-center">
+            <img src="https://assets.ccbp.in/frontend/dynamic-webapps/clock-img.png" class="image">
+            <p class="ml-4 mt-3 timer-style" id="timer">0 seconds</p>
+        </div>
+        <div class="type-div p-3" id="speedTypingTest">
+            <p id="quoteDisplay"></p>
+            <textarea placeholder="Type here!!!" id="quoteInput" rows="6" class="w-100" spellcheck="false"></textarea>
+            <p class="mt-2 current-word" id="currentWord"></p>
+        </div>
+        <div id="spinner" class="d-none">
+            <div class="d-flex justify-content-center">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+        <p id="result" class="mt-3 result-div"></p>
+        <div class="d-flex flex-row mt-5">
+            <button class="b1" id="submitBtn">Submit</button>
+            <button class="b2 ml-3" id="resetBtn">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
